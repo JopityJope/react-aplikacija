@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+var randomstring = require("randomstring");
 
 function App() {
+  const random = randomstring.generate();
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>{random}</p>
       </header>
     </div>
   );
